@@ -1,0 +1,165 @@
+
+/*page */
+#page{
+	width: 1000px;
+	background-color: lightgrey;
+	margin: auto;
+	padding: 5px;
+	font-family: georgia;
+	line-height: 1.5; 
+}
+
+/*left & right section*/
+.left, .right{
+	height: auto;
+	width: 300px;
+	background-color: grey;
+	float: left;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+
+.right{
+	width: 655px;
+	float: right;
+	background-color: lightgrey
+}
+
+.title{
+	font-family: sans-serif;
+	font-weight: 400;
+}
+
+img{
+	width: 100%;
+	border-radius: 5px;
+}
+
+.social{
+	display: -webkit-flex;
+	width: 50px;
+	height: 50px;
+	-webkit-justify-content: space-between;
+}
+
+a{
+	font-style: italic;
+}
+
+.empty{
+	height: 20px;
+}
+
+/*contact form*/
+input, textarea{
+	display: block;
+	width: 96%;
+	padding: 10px;
+	margin: 5px 0 7px 0;
+	font: 15px Verdana, sans-serif;
+	line-height: 1.5;
+}
+input{
+	height: 20px;
+}
+
+button{
+	height: 30px;
+	background-color: black;
+	color: white;
+	text-transform: uppercase;
+	border: none;
+	font-family: verdana;
+}
+
+/*footer*/
+.footer{
+	height: 40px;
+	padding: 10px 10px 0 10px;
+	background-color: white;
+	border-radius: 2px;
+	clear: both;
+	text-align: center;
+}
+
+/*
+===================
+Responsive Design
+===================*/
+@media only screen and (max-width: 500px){
+	#page, .left{
+		width: 95.4%;
+	} 
+   .right, .footer{
+		width: 95.4%;
+		margin: auto;
+	}
+	input, textarea{
+		width: 93%;
+	}
+}
+
+@media only screen and (max-width: 450px){
+	#page, .left{
+		width: 94.8%;
+	} 
+}
+
+@media only screen and (max-width: 413px){
+	#page, .left{
+		width: 93.8%;
+	} 
+}
+
+@media only screen and (max-width: 390px){
+	#page, .left{
+		width: 92.5%;
+	} 
+	input, textarea{
+		width: 91%;
+	}
+}
+
+@media only screen and (max-width:670px){
+	#page, .left{
+		width: 96%;
+	} 
+	.right, .footer{
+		width: 94%;
+		margin: auto;
+	}
+	
+	.footer{
+		width: 93%;
+	}
+	
+	input, textarea{
+		width: 90%;
+	}
+	
+}
+
+@media only screen and (min-width:900px){
+	#page{
+		width: 1000px;
+	} 
+	.left{
+		width: 300px;
+	}
+	.right{
+		width: 655px;
+	}
+} 
+/* Printing */
+@media print{
+	.footer, .right{
+		display: none;
+	}
+	.left{
+		width: 100%;
+		margin: auto;
+	}
+	@page{
+		margin: .5cm;
+	}
+}
